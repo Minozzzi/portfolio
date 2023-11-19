@@ -2,12 +2,24 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@8.5.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier . --cache",
+    "format:fix": "pnpm format --write",
+    "format:check": "pnpm format --check",
+    "lint": "eslint . --cache --max-warnings 0",
+    "lint:fix": "pnpm lint --fix",
+    "lint:check": "pnpm lint",
+    "type:check": "tsc --noEmit",
+    "lint:staged": "lint-staged"
   },
   "dependencies": {
     "next": "14.0.1",
@@ -23,9 +35,10 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5",
-    "husky": "^8.0.0"
+    "typescript": "^5"
   }
 }
