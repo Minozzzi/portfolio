@@ -1,0 +1,9 @@
+{
+  "*.{ts, tsx}":[
+    "pnpm lint:fix",
+    "pnpm type:check"
+  ],
+  "*.{json, ts, tsx, html, md}":[
+    "pnpm format:fix"
+  ]
+}
