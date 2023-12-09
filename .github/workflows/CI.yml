@@ -50,7 +50,7 @@ jobs:
 
       - if: github.event_name == 'pull_request'
         name: Validate all commits from PR
-        run: pnpm commitlint --from HEAD~${{ github.event.pull_request.commits }} --to HEAD --verbose
+        run: pnpm commitlint --from HEAD~${{ github.event.pull_request.commits }} --to HEAD --verbose --
 
       - name: Linter
         run: pnpm lint:check
