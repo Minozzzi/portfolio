@@ -18,7 +18,7 @@
     "lint": "eslint . --cache --max-warnings 0",
     "lint:fix": "pnpm lint --fix",
     "lint:check": "pnpm lint",
-    "type:check": "tsc --noEmit",
+    "type:check": "tsc --noEmit --pretty",
     "lint:staged": "lint-staged"
   },
   "dependencies": {

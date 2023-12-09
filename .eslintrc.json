@@ -4,12 +4,7 @@
     "es2021": true,
     "jest": true
   },
-  "extends": [
-    "airbnb",
-    "prettier",
-    "plugin:react-hooks/recommended",
-    "next/core-web-vitals"
-  ],
+  "extends": ["airbnb", "prettier", "plugin:react-hooks/recommended", "next/core-web-vitals"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -63,16 +58,7 @@
     "import/order": [
       "error",
       {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "type",
-          "object"
-        ],
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "type", "object"],
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": true
