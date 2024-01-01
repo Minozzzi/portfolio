@@ -1,4 +1,4 @@
 {
-  "*.{ts, tsx}": ["pnpm lint:check", "pnpm type:check"],
-  "*.{json, ts, tsx, html, md}": ["pnpm format:check"]
+  "*.{ts, tsx}": ["pnpm lint:check .", "pnpm type:check"],
+  "*.{json, ts, tsx, html, md}": ["pnpm format:check ."]
 }
